@@ -1,0 +1,199 @@
+screencapture-morinebakery-about-php-2026-04-03-00_15_43.png
+screencapture-morinebakery-categories-breads-breads-php-2026-04-03-00_15_24.png
+screencapture-morinebakery-categories-desserts-desserts-php-2026-04-03-00_15_10.png
+screencapture-morinebakery-categories-packs-packs-php-2026-04-03-00_14_51.png
+screencapture-morinebakery-categories-snacks-snacks-php-2026-04-03-00_14_35.png
+screencapture-morinebakery-categories-snacks-burger-burger-php-2026-04-03-00_13_58.png
+screencapture-morinebakery-2026-04-03-00_13_03.png
+I wanted to redesign    this morine bakery  website into  animations + 3D  website >>
+
+i gave complete  website details and   items  , where we nedd to  Give me a prompt  Only specify the4 navigations and  details of every product which specify the design  a website that  transfer  the  website into  beatiful  rich and premium and elegent   website ...
+
+11:33 AM
+
+Reading frontend design skill
+Reading frontend design skill
+Here is a comprehensive, detailed prompt for redesigning Morine Bakery into a premium 3D + animated website:
+
+🎨 Morine Bakery — Premium Redesign Prompt
+🌐 Overall Vision
+Redesign Morine Bakery as a luxury, cinematic, 3D-animated website with a warm golden-amber palette. Think high-end patisserie meets artisan heritage — evoking warmth, craft, and indulgence. Every scroll, hover, and click should feel alive.
+
+Aesthetic Direction: Warm Luxe Artisan — dark chocolate browns, burnished gold, cream whites, with amber glows. Deep shadows, volumetric light, rich textures.
+
+🎨 Design System
+Color Palette:
+
+Background: 
+#0f0a06 (near-black espresso)
+Primary Gold: 
+#c8860a
+Warm Amber: 
+#e8a020
+Cream: 
+#f5ead8
+Dark Chocolate: 
+#1a0f05
+Text: 
+#f0e4cc
+Typography:
+
+Display: Playfair Display (headings, hero text)
+Sub-headings: Cormorant Garamond (italic, elegant)
+Body: Lato (clean, readable)
+Accent numbers/labels: Libre Baskerville
+Motion Philosophy: Every element enters with purpose — staggered reveals, parallax depth, floating 3D card tilts, golden particle dust on hover.
+
+🧭 Navigation Bar
+Sticky top bar with blur-glass backdrop (backdrop-filter: blur(20px)) over dark background.
+
+Left: Morine Bakery logo with subtle golden shimmer animation on load
+Center Links (8 items):
+Cakes | Snacks | Pastries | Packs | Desserts | Breads | Contact | About Us
+Right: Phone number +91-84990 81111 with a small phone icon in gold
+Hover effect: Each nav link gets an animated golden underline that sweeps left-to-right
+Active state: Gold dot above the active link
+🏠 Hero Section (Full Screen)
+3D parallax bakery store interior image (the actual store photo from the website) as background
+Layered depth: background blurs slightly, foreground items pop
+Large display text centered:
+"Crafted With Love" — Playfair Display, 96px, cream color
+Subtitle: "Since 1971 — Hyderabad's Most Coveted Bakery" — Cormorant italic, 24px, amber
+Floating 3D badge rotating slowly: "50+ Years of Deliciousness"
+CTA Button: Explore Our Menu — gold border, transparent fill, glows on hover with amber light bloom
+Animated golden particles floating upward (like flour dust / sugar sparkles) using CSS keyframes
+Hero carousel dots at bottom indicating 4–5 slides
+🎠 Category Carousel (Below Hero)
+Horizontal scrollable row of 5 circular 3D cards, each slightly floating with a subtle bob animation:
+
+Circle	Icon/Image	Label
+🎂	Cake image	Cakes
+🍔	Burger image	Snacks
+🥐	Pastry image	Pastries
+📦	Biscuit pack	Packs
+🍮	Brownie image	Desserts
+Each card: dark chocolate background, gold rim border, product image inside, label below
+Hover: Card lifts in 3D (transform: rotateX(-10deg) translateY(-12px)), gold glow ring appears
+Click: Smooth scroll to that section
+🎂 CAKES Section
+Section header: Large italic "Cakes" with a thin gold decorative line on each side
+
+Products (5 items) — displayed in a staggered masonry/3D tilt grid:
+
+Cake — Classic sponge, plain elegant
+Cool Cake — Chilled cream cake
+Fancy Cake — Designer celebration cake
+Plum Cake — Rich dark fruit cake
+Shop Cake — Bakery-style display cake
+Card Design:
+
+Dark card (
+#1a0f05) with 1px gold border
+Product image fills top 65% with soft vignette at edges
+Name in Playfair Display, gold color
+Bottom: subtle "Order Now →" link that appears on hover with slide-up animation
+3D tilt on mouse move using JS mousemove + perspective(800px) rotateX() rotateY()
+🍔 SNACKS Section
+6 sub-categories displayed as large hexagonal or rounded-square tiles in a 3×2 grid:
+
+#	Item	Visual Hint
+1	Sandwiches	Bread + filling layered
+2	Chinese	Spicy red dish
+3	Rolls	Long crispy rolls
+4	Pizza	Cheesy overhead shot
+5	Burger	Stacked with greens
+6	Puffs	Flaky golden pastry
+Burger Sub-page (nested) — When clicking Burger, reveal 4 items:
+
+Veg Crispy Burger — ₹120
+Chicken Crispy Burger — ₹140
+Veg Burger — ₹120
+Paneer Burger — ₹120
+Each with price badge: gold pill shape showing ₹120
+
+Card animation: On hover, image zooms in 110% with a warm amber color overlay and product name slides up from bottom.
+
+🥐 PASTRIES Section
+5 items in a horizontal scrollable filmstrip with parallax depth:
+
+Black Forest — Dark cherry & cream
+Chocolate Walnut — Rich chocolate layered
+Pineapple — Light yellow cream
+Pista — Green pistachio cream
+Strawberry Pastry — Pink, fresh look
+Design: Each pastry card is tall (portrait ratio), slightly overlapping the next card. Scroll left/right with inertia. Active card scales up 1.1x with gold border glow.
+
+📦 PACKS Section
+8 biscuit pack products in a grid with realistic 3D box shadow making them look like physical product boxes:
+
+Chand Biscuits
+Badam Biscuits
+Osmanaia Biscuits
+Fruit Biscuits
+Kaju Biscuits
+Pista Biscuits
+Salt Biscuit
+Chocolate Kaju
+Box effect: Each card has a CSS perspective with a slight right-side face showing (like a real box viewed at angle). On hover, box rotates slightly to show more of the side face — 3D unboxing tease effect.
+
+🍮 DESSERTS Section
+2 items given large, full-width dramatic treatment:
+
+Cup Cakes — Left side, dark muffin on textured dark background
+Brownies — Right side, caramel-topped brownie with golden glaze drip effect (CSS animation)
+Split-screen layout, each side filling 50% viewport width. On hover each side expands to 60% pushing the other. Animated golden drip effect on the brownie using SVG/CSS path animation.
+
+🍞 BREADS Section
+3 items in a large, airy layout with dramatic side-lighting photography treatment:
+
+Bread — Classic white loaf
+Toast — Multigrain sliced
+Bun — Sesame bun
+Cards: White/cream background (contrast from other dark sections), dark text. Each card has a subtle grain texture overlay. Entering animation: cards fly in from slight rotation as user scrolls into view.
+
+💬 Brand Story Section
+Full-width section with:
+
+Background: subtle golden gradient over dark
+Large quote in Playfair: "Sweet moments are saved as memories."
+4-image collage of products (cake, burger, brownie, burger) arranged in an asymmetric floating layout
+Counter animations on scroll:
+50+ Years of Legacy
+2 Branches in Hyderabad
+35+ Years craftsmen experience
+100% Hygienically Maintained
+📍 Our Locations Section
+Two location cards with embedded Google Maps style display:
+
+Branch 1 — Main Store:
+
+#12-2-719/1, Nanal Nagar, Mehdipatnam, Hyderabad, Telangana-08
+📞 2351 0000, 2352 1111
+Branch 2 — Narsingi:
+
+#131/P, Narsingi, Gandipet Road, Hyderabad, Telangana-75
+📞 +91 91 60000 391, 91 60000 392
+Map cards: dark styled maps with golden marker pins, slide-in animation on scroll.
+
+📄 About Us Page
+Full-width hero banner with soft bakery interior background
+Two-column layout: large ornamental initial letter M on left, story text on right
+Story text (verbatim from site): Founded 1971 by Mr. Moosa Khan, passed to son Mr. Parvez Khan, grown to most coveted bakery in Hyderabad. Registered brand, master craftsmen of 35 years, ultra-modern machinery from Taiwan.
+Decorative gold divider lines between paragraphs
+🦶 Footer
+Dark (
+#0a0704) four-column layout:
+
+Column	Content
+Get In Touch	Both addresses, all phone numbers, email
+Categories	Cakes, Snacks, Pastries, Packs, Desserts, Breads
+Useful Info	About Us, Privacy Policy, Terms & Conditions, Return & Refund Policy, Contact Us
+Social	Instagram icon, WhatsApp icon (gold color, hover glow)
+Bottom bar: "Copyright © Morine Bakery 2024. All rights reserved. Designed & Developed by Media Wagon."
+
+✨ Global Animation Rules
+Page load: Staggered fade-up of all above-fold elements (0ms → 600ms delays)
+Scroll reveal: Elements enter with translateY(40px) opacity(0) → translateY(0) opacity(1) using IntersectionObserver
+Cursor: Custom golden circular cursor that trails slightly behind mouse
+Section transitions: Each section separated by a thin animated gold shimmer line
+Performance: All 3D effects use will-change: transform, GPU-accelerated only

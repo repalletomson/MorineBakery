@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Morine Bakery"
+version = "1.0.0"
+id = "artifacts/morine-bakery"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 24982
+
+[services.development]
+run = "pnpm --filter @workspace/morine-bakery run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/morine-bakery", "run", "build" ]
+publicDir = "artifacts/morine-bakery/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "24982"
+BASE_PATH = "/"

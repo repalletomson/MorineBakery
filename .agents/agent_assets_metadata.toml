@@ -1,0 +1,121 @@
+uploads = []
+
+[[generated]]
+id = "y5Pyu_09_Kj2ZsHUzmYUn"
+uri = "file://artifacts/morine-bakery/public/images/hero-bg.png"
+type = "image"
+title = "Cinematic bakery interior"
+
+[[generated]]
+id = "dtbadf4tidW8qY5d_o8nO"
+uri = "file://artifacts/morine-bakery/public/images/cake-classic.png"
+type = "image"
+title = "Classic sponge cake"
+
+[[generated]]
+id = "-6_4eZPCw1iVOs_EaaKsg"
+uri = "file://artifacts/morine-bakery/public/images/cake-cool.png"
+type = "image"
+title = "Chilled cream cake"
+
+[[generated]]
+id = "HX5tJOR0nWlvfTh9o2f0K"
+uri = "file://artifacts/morine-bakery/public/images/cake-fancy.png"
+type = "image"
+title = "Designer fancy cake"
+
+[[generated]]
+id = "hdzDbR7FdW707-JSWtHnb"
+uri = "file://artifacts/morine-bakery/public/images/cake-plum.png"
+type = "image"
+title = "Rich plum cake"
+
+[[generated]]
+id = "t_70Pd5rJ1z-SrOjxg6FY"
+uri = "file://artifacts/morine-bakery/public/images/cake-shop.png"
+type = "image"
+title = "Display shop cake"
+
+[[generated]]
+id = "8fmtCrBPyCA9p2Wt2kd_X"
+uri = "file://artifacts/morine-bakery/public/images/snack-sandwich.png"
+type = "image"
+title = "Sandwiches"
+
+[[generated]]
+id = "ta3LATBnGdfkINGUa69Ix"
+uri = "file://artifacts/morine-bakery/public/images/snack-chinese.png"
+type = "image"
+title = "Chinese rolls"
+
+[[generated]]
+id = "sHUMFpCRntvMgpMxyWkpT"
+uri = "file://artifacts/morine-bakery/public/images/snack-pizza.png"
+type = "image"
+title = "Bakery pizza"
+
+[[generated]]
+id = "bR3GOkgWy8KPyL4XLnq_p"
+uri = "file://artifacts/morine-bakery/public/images/snack-burger.png"
+type = "image"
+title = "Gourmet burger"
+
+[[outputs]]
+id = "rVmCOojMThy3RsDE5jezk"
+uri = "file://artifacts/morine-bakery/public/images/snack-puffs.jpg"
+type = "image"
+title = "flaky bakery puff pastry"
+
+[[outputs]]
+id = "hZbJyGLIGlDIQjZZlqWAm"
+uri = "file://artifacts/morine-bakery/public/images/burger-chicken.jpg"
+type = "image"
+title = "gourmet crispy chicken burger with fries"
+
+[[outputs]]
+id = "__gaFT5_oVrqDqGAZP5CS"
+uri = "file://artifacts/morine-bakery/public/images/burger-veg.jpg"
+type = "image"
+title = "gourmet vegetarian burger with fresh lettuce"
+
+[[outputs]]
+id = "YfBz1brU05_QQs4UcOt0K"
+uri = "file://artifacts/morine-bakery/public/images/pastry-blackforest.jpg"
+type = "image"
+title = "chocolate black forest cake pastry slice"
+
+[[outputs]]
+id = "ZL64HFdUb03iiJHQ43AHH"
+uri = "file://artifacts/morine-bakery/public/images/pastry-strawberry.jpg"
+type = "image"
+title = "strawberry cream pastry slice"
+
+[[outputs]]
+id = "9Xs1rjNy9uUAk8TioE1Q2"
+uri = "file://artifacts/morine-bakery/public/images/biscuits-assorted.jpg"
+type = "image"
+title = "assorted bakery biscuits cookies"
+
+[[outputs]]
+id = "JJe5kWouereWjVe0MApjP"
+uri = "file://artifacts/morine-bakery/public/images/dessert-cupcake.jpg"
+type = "image"
+title = "dark chocolate muffin cupcake"
+
+[[outputs]]
+id = "NB_lnNpxNKF2OU-7j7CvO"
+uri = "file://artifacts/morine-bakery/public/images/dessert-brownie.jpg"
+type = "image"
+title = "fudgy chocolate brownie with caramel"
+
+[[outputs]]
+id = "iA1gbbEi0z0iczaneYaFc"
+uri = "file://artifacts/morine-bakery/public/images/bread-loaf.jpg"
+type = "image"
+title = "classic white bread loaf sliced"
+
+[[outputs]]
+id = "uyxywTf0H7Biks7DQcSwB"
+uri = "file://artifacts/morine-bakery/public/images/bread-bun.jpg"
+type = "image"
+title = "sesame burger bun"
