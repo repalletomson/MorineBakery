@@ -35,8 +35,13 @@ export function Navbar() {
       transition={{ duration: 0.6, ease: "easeOut" }}
     >
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
-        <Link href="/" className="hover-trigger">
-          <span className="font-display text-2xl font-bold tracking-wider text-primary">
+        <Link href="/" className="hover-trigger flex items-center gap-3">
+          <img
+            src="/images/images.jpg"
+            alt="Morine Bakery Logo"
+            className="h-10 w-10 md:h-12 md:w-12 rounded-full object-cover border-2 border-primary/50 shadow-lg shadow-primary/20"
+          />
+          <span className="font-display text-xl md:text-2xl font-bold tracking-wider text-primary">
             MORINE <span className="text-foreground">BAKERY</span>
           </span>
         </Link>

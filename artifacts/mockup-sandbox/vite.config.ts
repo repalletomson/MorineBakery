@@ -2,49 +2,54 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 import path from "path";
-import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
 import { mockupPreviewPlugin } from "./mockupPreviewPlugin";
 
+// Replit-specific plugins — only loaded when running on Replit
+const isReplit = process.env.REPL_ID !== undefined;
+
+// PORT is required for dev/preview on Replit, optional for Vercel builds
 const rawPort = process.env.PORT;
+const port = rawPort ? Number(rawPort) : 5173;
 
-if (!rawPort) {
-  throw new Error(
-    "PORT environment variable is required but was not provided.",
-  );
-}
-
-const port = Number(rawPort);
-
-if (Number.isNaN(port) || port <= 0) {
+if (rawPort && (Number.isNaN(port) || port <= 0)) {
   throw new Error(`Invalid PORT value: "${rawPort}"`);
 }
 
-const basePath = process.env.BASE_PATH;
+// BASE_PATH is required on Replit, defaults to "/" on Vercel
+const basePath = process.env.BASE_PATH ?? "/";
 
-if (!basePath) {
-  throw new Error(
-    "BASE_PATH environment variable is required but was not provided.",
-  );
-}
-
-export default defineConfig({
-  base: basePath,
-  plugins: [
+// Resolve plugins dynamically — Replit plugins only loaded in Replit env
+async function resolvePlugins() {
+  const plugins: any[] = [
     mockupPreviewPlugin(),
     react(),
     tailwindcss(),
-    runtimeErrorOverlay(),
-    ...(process.env.NODE_ENV !== "production" &&
-    process.env.REPL_ID !== undefined
-      ? [
-          await import("@replit/vite-plugin-cartographer").then((m) =>
-            m.cartographer({
-              root: path.resolve(import.meta.dirname, ".."),
-            }),
-          ),
-        ]
-      : []),
-  ],
+  ];
+
+  if (isReplit) {
+    try {
+      const runtimeErrorOverlay = (await import("@replit/vite-plugin-runtime-error-modal")).default;
+      plugins.push(runtimeErrorOverlay());
+    } catch { /* plugin not available outside Replit */ }
+
+    if (process.env.NODE_ENV !== "production") {
+      try {
+        const cartographer = (await import("@replit/vite-plugin-cartographer")).cartographer;
+        plugins.push(
+          cartographer({
+            root: path.resolve(import.meta.dirname, ".."),
+          }),
+        );
+      } catch { /* plugin not available outside Replit */ }
+    }
+  }
+
+  return plugins;
+}
+
+export default defineConfig(async () => ({
+  base: basePath,
+  plugins: await resolvePlugins(),
   resolve: {
     alias: {
       "@": path.resolve(import.meta.dirname, "src"),
@@ -69,4 +74,4 @@ export default defineConfig({
     host: "0.0.0.0",
     allowedHosts: true,
   },
-});
+}));

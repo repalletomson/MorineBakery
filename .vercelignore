@@ -1,0 +1,38 @@
+# Vercel deployment — ignore these files/directories to reduce upload size
+
+# Replit-specific files
+.replit
+.replitignore
+replit.md
+.local/
+
+# Git
+.git/
+.gitignore
+
+# Agent configs
+.agents/
+
+# Test/dev artifacts
+attached_assets/
+
+# Scripts (not needed at runtime)
+scripts/
+
+# Lockfile (pnpm uses pnpm-lock.yaml)
+package-lock.json
+yarn.lock
+
+# IDE
+.vscode/
+.idea/
+
+# TypeScript build info
+*.tsbuildinfo
+
+# Node modules (installed by Vercel)
+node_modules/
+
+# Library source files (only needed at build time)
+lib/api-spec/
+lib/api-client-react/

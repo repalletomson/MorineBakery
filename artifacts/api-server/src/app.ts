@@ -29,6 +29,10 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.use("/api", router);
+// On Vercel, the serverless function is deployed under /api prefix,
+// so routes should be mounted at / (root).
+// In standalone mode (Replit), routes are mounted at /api.
+const apiBasePath = process.env.VERCEL ? "/" : "/api";
+app.use(apiBasePath, router);
 
 export default app;
