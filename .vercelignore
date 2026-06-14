@@ -32,7 +32,3 @@ yarn.lock
 
 # Node modules (installed by Vercel)
 node_modules/
-
-# Library source files (only needed at build time)
-lib/api-spec/
-lib/api-client-react/
